@@ -28,8 +28,8 @@
     "typescript": "^4.3.4"
   },
   "scripts": {
-    "start:server": "node backend",
-    "start:client": " http-server ./client -p 3000",
+    "start:server": "node ./backend",
+    "start:client": "http-server ./client -p 3000",
     "dev:app": "react-scripts start",
     "dev:server": "nodemon --watch .env --watch server --exec babel-node server --source-maps",
     "build:app": "cross-env BUILD_PATH='./client' react-scripts build",

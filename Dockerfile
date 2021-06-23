@@ -4,15 +4,15 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install -g http-server concurrently
+RUN npm i -g http-server concurrently
 
-RUN yarn
+RUN npm i
 
-RUN yarn build
+COPY . ./
 
-COPY . .
+RUN npm run build
 
 EXPOSE 3000
 EXPOSE 4000
 
-CMD ["concurrently","npm:server", "npm:client"]
+CMD ["concurrently","yarn start:server", "yarn start:client"]
