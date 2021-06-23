@@ -1,11 +1,12 @@
-# To-do App (express, mongodb and react)
+# To-do App (expres, mongodb and react)
+
+## Description
+The first time the user enters the application, a "user_uid" cookie will be created and assigned to identify each user and their "to-do".
 
 ## Missing or to improve
 * Improve docker and production build
 * Improve handle errors for API
 * Improve handle errors for react app from api
-* Improve some functions to allow unmount effects
-* Improve first initials setup (showing a first demo to-do and small tutorial)
 * Add session auth
 
 ## Available Scripts
@@ -23,7 +24,7 @@ You will also see any lint errors in the console.
 ### `yarn dev:server`
 
 Runs the server in the development mode.\
-Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:4000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
