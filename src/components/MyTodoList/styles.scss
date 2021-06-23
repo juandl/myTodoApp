@@ -1,0 +1,21 @@
+.itemsList {
+  .itemsList_ul {
+    padding: 0px;
+    list-style: none;
+    li {
+      display: flex;
+      cursor: pointer;
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      button {
+        margin-left: 10px;
+      }
+      input {
+        &:hover {
+          border-color: #80bdff;
+        }
+      }
+    }
+  }
+}

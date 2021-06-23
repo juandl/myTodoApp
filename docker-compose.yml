@@ -1,0 +1,21 @@
+version: '3'
+services:
+  mongo:
+    container_name: mongo_db
+    image: mongo
+    ports:
+      - '27017:27017'
+  client:
+    container_name: client
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+  backend:
+    container_name: backend
+    restart: always
+    build: .
+    ports:
+      - '4000:4000'
+    external_links:
+      - mongo

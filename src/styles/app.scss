@@ -1,0 +1,20 @@
+.main_app {
+  padding: 2rem 0px 0;
+  background: #f9f9f9;
+  height: 100vh;
+  .title {
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1200');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    h2,
+    p {
+      color: #fff;
+    }
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
